@@ -27,17 +27,27 @@ ruleTester.run("no-destructure", rule, {
     // give me some code that won't trigger a warning
     {
       code: `const branch = useGlobalStore((state) => state.cms.branch)`,
-      options: [["useGlobalStore"]]
-    }
+      options: [
+        {
+          hooks: ["useGlobalStore"],
+        },
+      ],
+    },
   ],
 
   invalid: [
     {
       code: `const { branch } = useGlobalStore((store) => store.cms)`,
-      errors: [{
-        messageId: 'noDestructure'
-      }],
-      options: [["useGlobalStore"]]
+      errors: [
+        {
+          messageId: "noDestructure",
+        },
+      ],
+      options: [
+        {
+          hooks: ["useGlobalStore"],
+        },
+      ],
     },
   ],
 });
