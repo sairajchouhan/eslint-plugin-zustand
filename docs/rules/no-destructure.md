@@ -6,6 +6,8 @@
 
 <!-- begin auto-generated rule options list -->
 
-
+| Name    | Type     |
+| :------ | :------- |
+| `hooks` | String[] |
 
 <!-- end auto-generated rule options list -->
