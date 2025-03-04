@@ -7,7 +7,7 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "sairaj",
+  "author": "sairajchouhan",
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "homepage": "https://github.com/sairajchouhan/eslint-plugin-zustand",
@@ -17,6 +17,10 @@
     "lint:js": "eslint .",
     "test": "mocha tests --recursive",
     "update:eslint-docs": "eslint-doc-generator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sairajchouhan/eslint-plugin-zustand.git"
   },
   "dependencies": {
     "requireindex": "^1.2.0"
