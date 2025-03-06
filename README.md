@@ -29,13 +29,18 @@ Add `zustand` to the plugins section of your `.eslintrc` configuration file. You
 ```
 
 
-Then configure the rules you want to use under the rules section.
+Then configure the rules you want to use under the rules section. The below config checks the hook `useGlobalStore` for destructuring
 
 ```json
 {
-    "rules": {
-        "zustand/rule-name": 2
-    }
+  "rules": {
+    "zustand/no-destructure": [
+      "error",
+      {
+        "hooks": ["useGlobalStore"]
+      }
+    ]
+  }
 }
 ```
 
