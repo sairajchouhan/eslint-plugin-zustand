@@ -45,12 +45,12 @@ Then configure the rules you want to use under the rules section. The below conf
 ```
 
 ## Rules
-<!-- begin auto-generated rules list -->
+<!-- begin  -->
 
 | Name                                           | Description                                            |
 | :--------------------------------------------- | :----------------------------------------------------- |
 | [no-destructure](docs/rules/no-destructure.md) | does not let you destructure values from zustand store |
 
-<!-- end auto-generated rules list -->
+<!-- end  -->
 
 
